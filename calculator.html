@@ -13,29 +13,30 @@
     <h1 class="heading">Online Calculator</h1>
     <section>
         <div class="calculator">
-            <input type="text" id="display" disabled>
+            <input type="text" id="output" disabled>
             <div class="keys">
-                <button>AC</button>
-                <button>/</button>
-                <button>*</button>
-                <button>-</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button id="operator">+</button>
-                <button id="mid_button">4</button>
-                <button id="mid_button">5</button>
-                <button id="mid_button">6</button>
-                <button id="operator">=</button>
-                <button id="low_button">1</button>
-                <button id="low_button">2</button>
-                <button id="low_button">3</button>
-                <button id="zero">0</button>
-                <button id="low_button">.</button>
+                <button onclick="clearAll()">AC</button>
+                <button onclick="output.value+='/'">/</button>
+                <button onclick="output.value+='*'">*</button>
+                <button onclick="output.value+='-'">-</button>
+                <button onclick="output.value+='7'">7</button>
+                <button onclick="output.value+='8'">8</button>
+                <button onclick="output.value+='9'">9</button>
+                <button id="operator" onclick="output.value+='+'">+</button>
+                <button id="mid_button" onclick="output.value+='4'">4</button>
+                <button id="mid_button" onclick="output.value+='5'">5</button>
+                <button id="mid_button" onclick="output.value+='6'">6</button>
+                <button id="operator" onclick="calculation()">=</button>
+                <button id="low_button" onclick="output.value+='1'">1</button>
+                <button id="low_button" onclick="output.value+='2'">2</button>
+                <button id="low_button" onclick="output.value+='3'">3</button>
+                <button id="zero" onclick="output.value+='0'">0</button>
+                <button id="low_button" onclick="output.value+='.'">.</button>
             </div>
         </div>
 
     </section>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
